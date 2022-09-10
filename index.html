@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <!-- contact us -->
+    <section class="contact-us">
+        <div class="container">
+            <form class="contact-form">
+                <div class="flex-row">
+                    <label for="name">Full Name</label>
+                    <input class="full-name" type="search" placeholder="Your Name" id="name" required>
+                    <label for="email">Email Address</label>
+                    <input class="email-address" type="search" placeholder="Your Email" id="email" required>
+                </div>
+                    
+                    <fieldset>
+                        <legend>
+                favorite number?
+                        </legend>
+                    <label for="first-one">
+                        <input class="choice" id="first-one" name="number" type="radio"  value="one" >
+                    </label>
+                    <label for="second-one">
+                        <input class="choice" id="second-one" name="number" type="radio"  value="two" >
+                    </label>
+                    <label for="third-one">
+                        <input class="choice" id="third-one" name="number" type="radio"  value="three" >
+                    </label>
+                    </fieldset>
+                <!-- <input type="radio" name="hello" class="test" value="two" required> -->
+                <button onclick="ifChecked()" class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <p id="invisible-data"></p>
+
+    <script src="firebase/firebase.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</body>
+
+</html>
