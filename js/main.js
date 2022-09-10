@@ -5,8 +5,6 @@ const emailAddress = document.querySelector(".email-address");
 const choice = document.querySelector(".choice");
 const submit = document.querySelector(".submit-form");
 const checkBox = document.querySelector('input[name="number"]');
-let invisibleBox = document.querySelector("#invisible-data");
-let invisibleBoxVal = document.querySelector("#invisible-data").textContent;
 
 let ifChecked = () => {
   /* document.getElementsByName("number").forEach((radio) => {
@@ -22,8 +20,6 @@ contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
   document.getElementsByName("number").forEach((radio) => {
     if (radio.checked) {
-      invisibleBox.textContent = radio.value;
-
       db.collection("contact-form")
         .doc()
         .set({
