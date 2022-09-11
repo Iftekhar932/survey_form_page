@@ -18,18 +18,25 @@ let ifChecked = () => {
 
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  let choices = {};
   document.getElementsByName("number").forEach((radio) => {
     if (radio.checked) {
-      db.collection("contact-form")
-        .doc()
-        .set({
-          fullName: fullName.value,
-          emailAddress: emailAddress.value,
-          choice: radio.value,
-        })
-        .then(() => {
-          contactForm.reset();
-        });
+      choices.firstChoice = radio.value;
     }
   });
+  document.getElementsByName("color").forEach((radio) => {
+    if (radio.checked) {
+      choices.secondChoice = radio.value;
+    }
+  });
+  db.collection("contact-form")
+    .doc()
+    .set({
+      fullName: fullName.value,
+      emailAddress: emailAddress.value,
+      choices,
+    })
+    .then(() => {
+      contactForm.reset();
+    });
 });
