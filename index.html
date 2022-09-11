@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <!-- contact us -->
     <section class="contact-us">
-        <div class="container">
-            <form class="contact-form">
-                <h1>Survey Form</h1>
-                <fieldset class="text-field">
-                    <label for="name">Full Name
-                        <input class="full-name" type="search" placeholder="Write your Name" id="name" required>
-                    </label>
-                    <label for="email">Email Address
-                        <input class="email-address" type="search" placeholder="Write your Email" id="email" required>
-                    </label>
-                    <label for="address">Your Address
-                        <input class="address" type="search" placeholder="Write your address" id="address" required>
-                    </label>
-                </fieldset>
+      <div class="container">
+        <form class="contact-form">
+          <h1>Survey Form</h1>
+          <!-- TEXT INPUT -->
+          <fieldset class="text-field">
+            <label for="name"
+              >Full Name
+              <input
+                class="full-name"
+                type="search"
+                placeholder="Write your Name"
+                id="name"
+                required
+              />
+            </label>
+            <label for="email"
+              >Email Address
+              <input
+                class="email-address"
+                type="search"
+                placeholder="Write your Email"
+                id="email"
+                required
+              />
+            </label>
+            <label for="address"
+              >Your Address
+              <input
+                class="address"
+                type="search"
+                placeholder="Write your address"
+                id="address"
+                required
+              />
+            </label>
+          </fieldset>
 
-                <fieldset class="radio-field">
-                    <legend>
-                        favorite number?
-                    </legend>
-                    <label for="first-one">
-                        <input class="choice" id="first-one" name="number" type="radio" value="One">One
-                    </label>
-                    <label for="second-one">
-                        <input class="choice" id="second-one" name="number" type="radio" value="Two">Two
-                    </label>
-                    <label for="third-one">
-                        <input class="choice" id="third-one" name="number" type="radio" value="Three">Three
-                    </label>
-                </fieldset>
+          <fieldset class="radio-field">
+            <!-- RADIO INPUT -->
+            <legend>favorite number?</legend>
+            <label for="first-one">
+              <input
+                class="choice"
+                id="first-one"
+                name="number"
+                type="radio"
+                value="One"
+              />One
+            </label>
+            <label for="second-one">
+              <input
+                class="choice"
+                id="second-one"
+                name="number"
+                type="radio"
+                value="Two"
+              />Two
+            </label>
+            <label for="third-one">
+              <input
+                class="choice"
+                id="third-one"
+                name="number"
+                type="radio"
+                value="Three"
+              />Three
+            </label>
+          </fieldset>
 
-                <fieldset class="radio-field">
-                    <legend>
-                        favorite color?
-                    </legend>
-                    <label for="fourth-one">
-                        <input class="color" id="fourth-one" name="color" type="radio" value="Red">Red
-                    </label>
-                    <label for="fifth-one">
-                        <input class="color" id="fifth-one" name="color" type="radio" value="Blue">Blue
-                    </label>
-                    <label for="sixth-one">
-                        <input class="color" id="sixth-one" name="color" type="radio" value="Green">Green
-                    </label>
-                </fieldset>
-                <button onclick="ifChecked()" class="btn" type="submit">Submit</button>
-            </form>
-
-        </div>
+          <fieldset class="radio-field">
+            <!-- RADIO INPUT -->
+            <legend>favorite color?</legend>
+            <label for="fourth-one">
+              <input
+                class="color"
+                id="fourth-one"
+                name="color"
+                type="radio"
+                value="Red"
+              />Red
+            </label>
+            <label for="fifth-one">
+              <input
+                class="color"
+                id="fifth-one"
+                name="color"
+                type="radio"
+                value="Blue"
+              />Blue
+            </label>
+            <label for="sixth-one">
+              <input
+                class="color"
+                id="sixth-one"
+                name="color"
+                type="radio"
+                value="Green"
+              />Green
+            </label>
+          </fieldset>
+          <button onclick="ifChecked()" class="btn" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
 
     <script src="firebase/firebase.js"></script>
     <script src="js/main.js"></script>
-</body>
-</body>
-
+  </body>
 </html>
+
+
