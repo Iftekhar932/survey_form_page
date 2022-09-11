@@ -43,7 +43,7 @@ input {
   display: inline-block;
 }
 fieldset.text-field input {
-  width: 120px;
+  width: 125px;
 }
 input[type="radio"] {
   accent-color: cyan;
