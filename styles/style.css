@@ -45,6 +45,10 @@ input {
   background: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 1px solid #fff;
+  outline: none;
+}
+input:focus {
+  border-bottom: 1px solid cyan;
 }
 ::placeholder {
   color: hsl(0, 0%, 80%);
@@ -52,4 +56,16 @@ input {
 button.btn {
   font-weight: 500;
   padding: 0.5rem 1rem;
+  background: linear-gradient(45deg, cyan -150%, white 120%);
+  transition: 1s;
+  border-radius: 4px;
+  max-width: 200px;
+  align-content: center;
+  justify-self: center;
+}
+button.btn:hover {
+  transition: 1s;
+  outline: 1px solid cyan;
+  background: black;
+  color: white;
 }
