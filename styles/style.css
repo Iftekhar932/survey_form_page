@@ -36,7 +36,9 @@ form {
 fieldset {
   border: none;
 }
-
+.text-field * {
+  display: block;
+}
 input {
   font-weight: 500;
   padding: 0.5rem 0rem;
@@ -46,6 +48,7 @@ input {
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
+  display: inline-block;
 }
 input[type="radio"] {
   accent-color: cyan;
