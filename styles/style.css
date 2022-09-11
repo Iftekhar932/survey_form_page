@@ -47,6 +47,9 @@ input {
   border-bottom: 1px solid #fff;
   outline: none;
 }
+input[type="radio"] {
+  accent-color: cyan;
+}
 input:focus {
   border-bottom: 1px solid cyan;
 }
