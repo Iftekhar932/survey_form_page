@@ -36,7 +36,7 @@ form {
 fieldset {
   border: none;
 }
-.text-field * {
+fieldset.text-field * {
   display: block;
 }
 input {
@@ -74,4 +74,10 @@ button.btn:hover {
   outline: 1px solid cyan;
   background: black;
   color: white;
+}
+
+@media (max-width: 640px) {
+  fieldset.radio-field label {
+    display: block;
+  }
 }
