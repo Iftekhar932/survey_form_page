@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen";
 }
+body {
+  overflow-y: hidden;
+}
 .flex {
   display: flex;
   flex-direction: column;
@@ -12,7 +15,7 @@
 }
 section.contact-us {
   height: 100vh;
-  background: url("https://i.ibb.co/nzd2rMW/r1.jpg") no-repeat center fixed;
+  background: url("https://i.ibb.co/nzd2rMW/r1.jpg") no-repeat center scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +40,7 @@ fieldset {
 input {
   font-weight: 500;
   padding: 0.5rem 0rem;
-  margin: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0);
   border: none;
