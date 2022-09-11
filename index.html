@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -15,12 +16,10 @@
     <section class="contact-us">
         <div class="container">
             <form class="contact-form">
-                <div class="flex-row">
                     <label for="name">Full Name</label>
                     <input class="full-name" type="search" placeholder="Your Name" id="name" required>
                     <label for="email">Email Address</label>
                     <input class="email-address" type="search" placeholder="Your Email" id="email" required>
-                </div>
                     
                     <fieldset>
                         <legend>
@@ -52,7 +51,7 @@
                     </label>
                     </fieldset>
                 <!-- <input type="radio" name="hello" class="test" value="two" required> -->
-                <button onclick="ifChecked()" class="btn" type="submit">Send Message</button>
+                <button onclick="ifChecked()" class="btn" type="submit">Submit</button>
             </form>
         </div>
     </section>

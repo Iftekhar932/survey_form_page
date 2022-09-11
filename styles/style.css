@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.contact-us {
+  height: 100vh;
+  background: url("https://i.ibb.co/nzd2rMW/r1.jpg") no-repeat center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: auto;
+  width: 50vw;
+  max-width: 768px;
+  padding: 2rem;
+  border: 2px ridge #fff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  padding: 0.5rem;
+}
+::placeholder {
+  color: rgb(67, 67, 67);
+}
