@@ -7,12 +7,6 @@
 body {
   overflow-y: hidden;
 }
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 section.contact-us {
   height: 100vh;
   background: url("https://i.ibb.co/nzd2rMW/r1.jpg") no-repeat center scroll;
@@ -20,7 +14,6 @@ section.contact-us {
   justify-content: center;
   align-items: center;
 }
-
 form {
   margin: auto;
   width: 80vw;
@@ -32,7 +25,6 @@ form {
   display: flex;
   flex-direction: column;
 }
-
 fieldset {
   border: none;
 }
@@ -49,6 +41,9 @@ input {
   border-bottom: 1px solid #fff;
   outline: none;
   display: inline-block;
+}
+fieldset.text-field input {
+  width: 120px;
 }
 input[type="radio"] {
   accent-color: cyan;
